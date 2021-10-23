@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+
+
+.wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+
+.header_nav {
+    display: flex;
+    width:100%;
+    justify-content:space-between ;
+}
+
+
+.header_nav_logo {
+    display: flex;
+    margin-top: 47px;
+    /* border: 2px solid red */
+    
+}
+
+
+.header_list {
+    display: flex;
+    list-style: none; 
+   margin-left: 80px;
+   margin-top: 10px;
+   white-space: nowrap;
+  
+}
+
+
+a{
+    text-decoration: none;
+    color:rgba(241, 241, 241, 1);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+/* identical to box height, or 21px */
+
+letter-spacing: -0.01em;
+
+}
+
+.header_list_item:not(:first-child){
+    margin-left: 40px;
+    
+}
+.header_nav_button{
+    display:flex ;
+    /* border: 2px solid green; */
+    
+    
+}
+
+
+
+.header_nav_button button {
+
+  display: inline-block; 
+  margin-top: 35px;
+    border: none;
+    cursor: pointer;
+    width: 122px;
+    height: 54px;
+    background: #F1F1F1;
+border-radius: 65px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 150%;
+color: #151515;
+    
+}
+
+.menu{
+   display: none;
+}
+
+.menu-btn  {
+        
+display: none;
+    
+} 
+
+
+
+
+
+ 
+
+
+
+
+.header_promo {
+    margin-top: 134px;
+}
+.header_promo h1 {
+    color: rgba(241, 241, 241, 1);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+}
+.header_promo p {
+    color: rgba(255, 76, 13, 1);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    margin-top: 43px;
+    
+}
+
+
+.checkbox{
+    visibility: hidden;
+}
+
+.checkbox-group {
+position: relative;
+top: 68px;
+width: 248px;
+height: 54px;
+background-color: inherit;
+border-radius: 65px;
+border: 2px solid white;
+}
+
+.white {
+    position: absolute;
+    z-index: 2;
+    left: 35px;
+    top: 15px;
+    color: black;
+
+}
+.black {
+position: absolute;
+z-index: 2;
+left: 160px;
+top: 15px;
+color: white;
+}
+.checkbox-group:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: 65px;
+    }
+
+    .checkbox-label{
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        left: 0;
+        width:118px;
+        height:50px;
+        background-color: #fff;
+        border: 2px solid #fff;
+        border-radius: 65px;
+transition: all 0.4s ease;
+cursor: pointer;
+    }
+    .checkbox:checked + .checkbox-label {
+        left: 126px;
+        background-color: black;
+    }
+
+
+
+
+.header_promo_button button {
+
+    border-radius: 25px;
+}
+.header_promo_text {
+    margin-top: 250px;
+}
+.header_promo_text p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 110%;
+    color:rgba(241, 241, 241, 1);
+}
+.header_promo_function {
+    display: flex;
+    margin-top: 60px;
+
+}
+.promo_function_card {
+    
+}
+.promo_function_card p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #F1F1F1;
+    margin-top: 33px;
+
+}
+.promo_function_card h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #F1F1F1;
+}
+.promo_card_img-1 {
+    width: 760px;
+    height: 400px;
+    background-image: url(/img/Rectangle\ 23.jpg);
+    
+} 
+
+.promo_card_img-3 {
+    /* width: 360px;
+    height: 300px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:960px) and (min-width:640px)
+{
+    .wrapper {
+        max-width:960px;
+        min-width:640px;
+        width: 880px;
+        border: 2px solid red;
+    }
+    
+    
+    .header_nav {
+        display: flex;
+        /* border: 2px solid blue; */
+        justify-content: space-between;
+        
+
+        /* border: 2px solid blue; */
+    }
+    
+    .header_nav_logo {
+     border: 2px solid red;   
+
+    }
+    
+
+    
+    
+    
+    .header_list {
+        display: none;
+        list-style: none; 
+       margin-top: 57px;
+       margin-left: 80px;
+    }
+    
+    
+    
+    a{
+        text-decoration: none;
+        color:rgba(241, 241, 241, 1);
+    
+    }
+    
+    .header_list_item:not(:first-child){
+        margin-left: 40px;
+        
+    }
+    .header_nav_button{
+        display: none;
+    }
+    
+    
+ 
+    
+    /* .burger_menu {
+        display: flex;
+        justify-content: flex-end; 
+    } */
+    
+     .menu-btn {
+        display: block;
+        margin-top: 47px;
+        background: rgba(241, 241, 241, 1);
+        width: 50px;
+        height: 50px;
+        position: relative;
+        /* left: 820px; */
+        z-index:2;
+        overflow: hidden;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        
+    } 
+    
+     .menu-btn span {
+        width: 18px;
+        height: 2px;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    
+    .menu-btn span:nth-of-type(2) {
+        top: 35%;
+        left: 50%;
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: 65%;
+        left: 50%;
+    } 
+    
+    .menu {
+        display: block;
+        position: fixed;
+        top: 95px;
+        left: -163px;
+        width: 200px;
+        height: 300px;
+        padding: 15px;
+        background: grey;
+        color: black;
+        transform: translateX(0);
+        transition: transform 0.5s; 
+        
+    }
+    .menu.active {
+        transform: translateX(100%);
+    }
+    .menu li {
+        list-style-type: none;
+    }
+    
+    .header_promo {
+        margin-top: 120px;
+    }
+
+    .header_promo_button {
+    }
+
+    
+    .header_promo h1 {
+        color:rgba(255, 76, 13, 1);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .header_promo p {
+        color:rgba(241, 241, 241, 1);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+        
+    }
+    .header_promo_button {
+        display: inline-block;
+        min-width: 248px;
+        border: 2px solid red;
+        border-radius: 65px;
+        margin-top: 60px;
+    }
+    .header_promo_button button {
+        border-radius: 25px;
+    }
+    .header_promo_text {
+        margin-top: 250px;
+    }
+    .header_promo_text p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 110%;
+        color:rgba(241, 241, 241, 1);
+    }
+    .header_promo_function {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .promo_function_card {
+       
+    }
+    .promo_function_card p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #F1F1F1;
+        margin-top: 33px;
+    
+    }
+    .promo_function_card h2 {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #F1F1F1;
+    }
+    .promo_card_img-1 {
+        width: 760px;
+        height: 400px;
+        background-image: url(/img/Rectangle\ 23.jpg);
+        
+    } 
+    
+    .promo_card_img-3 {
+        /* width: 360px;
+        height: 300px; */
+    } 
+
+}
